@@ -2,6 +2,18 @@
 
 Cross-repo conventions for `WatsonWBlair`'s lab repos.
 
+## Working with the lab (Claude Code setup)
+
+Two repos bootstrap a lab Claude Code environment:
+
+1. **Conventions** (this repo) — clone and junction it so Cowork sees the lab rules (see [How repos consume it](#how-repos-consume-it) below).
+2. **Tooling** — the lab's Claude Code plugins live in [`lab-claude-plugins`](https://github.com/WatsonWBlair/lab-claude-plugins). Add the marketplace and install what you need:
+
+   ```
+   /plugin marketplace add WatsonWBlair/lab-claude-plugins
+   /plugin install pr-review-loop@lab-claude-plugins
+   ```
+
 ## What's here
 
 - `.claude/rules/` — markdown files defining lab-wide conventions. Consumed by Cowork locally (via a junction at `Development\.claude\rules\`) and by the PR-review GitHub Action at review time.
