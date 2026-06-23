@@ -25,8 +25,9 @@ gitignored from the fork. Plans and backlog track in the fork itself (see Logs a
   lab-os, so its `.claude/rules/` live here natively; `git pull upstream main` pulls rule
   updates. Treat these as your starting standards — adapt or extend as your project diverges.
   Source-of-truth: github.com/CAMELS-Research-Group/lab-os.
-- **`lab-claude-plugins`** — Claude Code plugins installed during setup (e.g. `pr-review-loop`),
-  via the plugin marketplace. Source-of-truth: github.com/CAMELS-Research-Group/lab-claude-plugins.
+- **`lab-claude-plugins`** — Claude Code plugins installed during setup (`pr-review-loop`,
+  `logging-automation`, `prompt-optimization`), via the plugin marketplace.
+  Source-of-truth: github.com/WatsonWBlair/lab-claude-plugins.
 - **`superpowers`** — workflow plugins from the official Claude Code marketplace (brainstorming,
   planning, TDD, subagent-driven execution).
 
